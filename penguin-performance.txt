@@ -2,57 +2,57 @@ Base-DT with default parameters
  
 Confusion matrix: 
  
-[[31  3  0]
- [ 1 20  0]
- [ 0  0 29]]
+[[32  0  0]
+ [ 1 13  0]
+ [ 1  0 37]]
  
 Classification report:
  
               precision    recall  f1-score   support
 
-      Adelie       0.97      0.91      0.94        34
-   Chinstrap       0.87      0.95      0.91        21
-      Gentoo       1.00      1.00      1.00        29
+      Adelie       0.94      1.00      0.97        32
+   Chinstrap       1.00      0.93      0.96        14
+      Gentoo       1.00      0.97      0.99        38
 
-    accuracy                           0.95        84
-   macro avg       0.95      0.95      0.95        84
-weighted avg       0.95      0.95      0.95        84
+    accuracy                           0.98        84
+   macro avg       0.98      0.97      0.97        84
+weighted avg       0.98      0.98      0.98        84
 
-Average accuracy: 0.9761904761904763
-Variance of the accuracy: 0.0003968253968253982
-Average macro-average F1: 0.974613580127896
-Variance of the macro-average F1: 0.0004430287365322392
-Average weighted-average F1: 0.9763112108817305
-Variance of the weighted-average F1: 0.0003894317469570381
+Average accuracy: 0.9642857142857142
+Variance of the accuracy: 5.6689342403628236e-05
+Average macro-average F1: 0.9552785670198606
+Variance of the macro-average F1: 0.00012117652540966157
+Average weighted-average F1: 0.964176726166776
+Variance of the weighted-average F1: 5.708296896212413e-05
  
 ---------------------------------------------------------------------------------------------------------------
  
 Top-DT where the criterion, max_depth, and min_samples_split were changed
-Best hyperparameters found by gridsearch: {'criterion': 'gini', 'max_depth': None, 'min_samples_split': 3}
+Best hyperparameters found by gridsearch: {'criterion': 'gini', 'max_depth': 7, 'min_samples_split': 3}
  
 Confusion matrix: 
  
-[[34  0  0]
- [ 1 20  0]
- [ 0  0 29]]
+[[32  0  0]
+ [ 1 13  0]
+ [ 1  0 37]]
  
 Classification report:
  
               precision    recall  f1-score   support
 
-      Adelie       0.97      1.00      0.99        34
-   Chinstrap       1.00      0.95      0.98        21
-      Gentoo       1.00      1.00      1.00        29
+      Adelie       0.94      1.00      0.97        32
+   Chinstrap       1.00      0.93      0.96        14
+      Gentoo       1.00      0.97      0.99        38
 
-    accuracy                           0.99        84
-   macro avg       0.99      0.98      0.99        84
-weighted avg       0.99      0.99      0.99        84
+    accuracy                           0.98        84
+   macro avg       0.98      0.97      0.97        84
+weighted avg       0.98      0.98      0.98        84
 
  
-Average accuracy: 0.980952380952381
-Variance of the accuracy: 0.0003741496598639462
-Average macro-average F1: 0.9799226645276485
-Variance of the macro-average F1: 0.00040973632255334033
-Average weighted-average F1: 0.9811303179264474
-Variance of the weighted-average F1: 0.00036494817892208573
+Average accuracy: 0.9690476190476189
+Variance of the accuracy: 9.070294784580509e-05
+Average macro-average F1: 0.9625264508846598
+Variance of the macro-average F1: 0.00019577903257342381
+Average weighted-average F1: 0.9690412185934573
+Variance of the weighted-average F1: 9.173581319236863e-05
  
