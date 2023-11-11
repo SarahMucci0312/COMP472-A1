@@ -1,0 +1,56 @@
+Base-DT with default parameters
+ 
+Confusion matrix: 
+[[  0  74 261]
+ [  0 275  64]
+ [  0  87 284]]
+ 
+Classification report:
+ 
+              precision    recall  f1-score   support
+
+           F       0.00      0.00      0.00       335
+           I       0.63      0.81      0.71       339
+           M       0.47      0.77      0.58       371
+
+    accuracy                           0.53      1045
+   macro avg       0.37      0.53      0.43      1045
+weighted avg       0.37      0.53      0.44      1045
+
+Average accuracy: 0.4844019138755981
+Variance of the accuracy: 3.31127950367436e-05
+Average macro-average F1: 0.486078171435899
+Variance of the macro-average F1: 3.163285479785127e-05
+Average weighted-average F1: 0.4845554716898704
+Variance of the weighted-average F1: 3.3015119067928756e-05
+ 
+---------------------------------------------------------------------------------------------------------------
+ 
+Top-DT where the criterion, max_depth, and min_samples_split were changed
+Best hyperparameters found by gridsearch: {'criterion': 'gini', 'max_depth': 4, 'min_samples_split': 2}
+ 
+Confusion matrix: 
+[[ 41  71 223]
+ [  5 277  57]
+ [ 33  83 255]]
+ 
+Classification report:
+ 
+              precision    recall  f1-score   support
+
+           F       0.52      0.12      0.20       335
+           I       0.64      0.82      0.72       339
+           M       0.48      0.69      0.56       371
+
+    accuracy                           0.55      1045
+   macro avg       0.55      0.54      0.49      1045
+weighted avg       0.54      0.55      0.50      1045
+
+ 
+Average accuracy: 0.5483253588516747
+Variance of the accuracy: 0.0
+Average macro-average F1: 0.4934873532051764
+Variance of the macro-average F1: 0.0
+Average weighted-average F1: 0.49674412699653214
+Variance of the weighted-average F1: 0.0
+ 
