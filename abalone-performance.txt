@@ -1,56 +1,56 @@
 Base-DT with default parameters
  
 Confusion matrix: 
-[[  0  50 266]
- [  1 279  67]
- [  1 100 281]]
+[[  0  97 234]
+ [  0 297  40]
+ [  0 126 251]]
  
 Classification report:
  
               precision    recall  f1-score   support
 
-           F       0.00      0.00      0.00       316
-           I       0.65      0.80      0.72       347
-           M       0.46      0.74      0.56       382
+           F       0.00      0.00      0.00       331
+           I       0.57      0.88      0.69       337
+           M       0.48      0.67      0.56       377
 
-    accuracy                           0.54      1045
-   macro avg       0.37      0.51      0.43      1045
-weighted avg       0.38      0.54      0.45      1045
+    accuracy                           0.52      1045
+   macro avg       0.35      0.52      0.42      1045
+weighted avg       0.36      0.52      0.42      1045
 
-Average accuracy: 0.4909090909090909
-Variance of the accuracy: 2.3076394771182e-05
-Average macro-average F1: 0.49403099616895163
-Variance of the macro-average F1: 1.8526580845440446e-05
-Average weighted-average F1: 0.4935804163318598
-Variance of the weighted-average F1: 1.9936089974494682e-05
+Average accuracy: 0.4977990430622009
+Variance of the accuracy: 2.28566195828849e-05
+Average macro-average F1: 0.4987385919859194
+Variance of the macro-average F1: 2.4026312434687317e-05
+Average weighted-average F1: 0.497421519855498
+Variance of the weighted-average F1: 2.2551936916072206e-05
  
 ---------------------------------------------------------------------------------------------------------------
  
 Top-DT where the criterion, max_depth, and min_samples_split were changed
-Best hyperparameters found by gridsearch: {'criterion': 'entropy', 'max_depth': 4, 'min_samples_split': 2}
+Best hyperparameters found by gridsearch: {'criterion': 'gini', 'max_depth': 4, 'min_samples_split': 2}
  
 Confusion matrix: 
-[[106  39 171]
- [ 36 257  54]
- [ 89 100 193]]
+[[ 80  52 199]
+ [ 39 255  43]
+ [ 55  89 233]]
  
 Classification report:
  
               precision    recall  f1-score   support
 
-           F       0.46      0.34      0.39       316
-           I       0.65      0.74      0.69       347
-           M       0.46      0.51      0.48       382
+           F       0.46      0.24      0.32       331
+           I       0.64      0.76      0.70       337
+           M       0.49      0.62      0.55       377
 
-    accuracy                           0.53      1045
-   macro avg       0.52      0.53      0.52      1045
-weighted avg       0.52      0.53      0.52      1045
+    accuracy                           0.54      1045
+   macro avg       0.53      0.54      0.52      1045
+weighted avg       0.53      0.54      0.52      1045
 
  
-Average accuracy: 0.5320574162679426
+Average accuracy: 0.5435406698564593
 Variance of the accuracy: 0.0
-Average macro-average F1: 0.5206195320451781
+Average macro-average F1: 0.5198502816290507
 Variance of the macro-average F1: 0.0
-Average weighted-average F1: 0.5232897680674748
+Average weighted-average F1: 0.5220531855504889
 Variance of the weighted-average F1: 0.0
  
