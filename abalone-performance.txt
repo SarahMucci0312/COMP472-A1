@@ -1,56 +1,116 @@
 Base-DT with default parameters
  
 Confusion matrix: 
-[[  0  97 234]
- [  0 297  40]
- [  0 126 251]]
+[[ 16  58 300]
+ [ 30 222  57]
+ [  7  78 277]]
  
 Classification report:
  
               precision    recall  f1-score   support
 
-           F       0.00      0.00      0.00       331
-           I       0.57      0.88      0.69       337
-           M       0.48      0.67      0.56       377
+           F       0.30      0.04      0.07       374
+           I       0.62      0.72      0.67       309
+           M       0.44      0.77      0.56       362
 
-    accuracy                           0.52      1045
-   macro avg       0.35      0.52      0.42      1045
-weighted avg       0.36      0.52      0.42      1045
+    accuracy                           0.49      1045
+   macro avg       0.45      0.51      0.43      1045
+weighted avg       0.44      0.49      0.42      1045
 
-Average accuracy: 0.4977990430622009
-Variance of the accuracy: 2.28566195828849e-05
-Average macro-average F1: 0.4987385919859194
-Variance of the macro-average F1: 2.4026312434687317e-05
-Average weighted-average F1: 0.497421519855498
-Variance of the weighted-average F1: 2.2551936916072206e-05
+Average accuracy: 0.4769377990430622
+Variance of the accuracy: 1.8168082232549725e-05
+Average macro-average F1: 0.48258620834358085
+Variance of the macro-average F1: 1.749032589242294e-05
+Average weighted-average F1: 0.4760486937146515
+Variance of the weighted-average F1: 1.9952667849096725e-05
  
 ---------------------------------------------------------------------------------------------------------------
  
 Top-DT where the criterion, max_depth, and min_samples_split were changed
-Best hyperparameters found by gridsearch: {'criterion': 'gini', 'max_depth': 4, 'min_samples_split': 2}
+Best hyperparameters found by gridsearch: {'criterion': 'entropy', 'max_depth': 4, 'min_samples_split': 2}
  
 Confusion matrix: 
-[[ 80  52 199]
- [ 39 255  43]
- [ 55  89 233]]
+[[116  64 194]
+ [  6 241  62]
+ [ 92  86 184]]
  
 Classification report:
  
               precision    recall  f1-score   support
 
-           F       0.46      0.24      0.32       331
-           I       0.64      0.76      0.70       337
-           M       0.49      0.62      0.55       377
+           F       0.54      0.31      0.39       374
+           I       0.62      0.78      0.69       309
+           M       0.42      0.51      0.46       362
 
-    accuracy                           0.54      1045
-   macro avg       0.53      0.54      0.52      1045
-weighted avg       0.53      0.54      0.52      1045
+    accuracy                           0.52      1045
+   macro avg       0.53      0.53      0.51      1045
+weighted avg       0.52      0.52      0.50      1045
 
  
-Average accuracy: 0.5435406698564593
+Average accuracy: 0.5177033492822967
 Variance of the accuracy: 0.0
-Average macro-average F1: 0.5198502816290507
+Average macro-average F1: 0.5139940398437014
 Variance of the macro-average F1: 0.0
-Average weighted-average F1: 0.5220531855504889
+Average weighted-average F1: 0.5037683592665312
+Variance of the weighted-average F1: 0.0
+ 
+---------------------------------------------------------------------------------------------------------------
+ 
+Base-MLP with default parameters
+ 
+Confusion matrix: 
+ 
+[[  0   0 374]
+ [  0   0 309]
+ [  0   0 362]]
+ 
+Classification report:
+ 
+              precision    recall  f1-score   support
+
+           F       0.00      0.00      0.00       374
+           I       0.00      0.00      0.00       309
+           M       0.35      1.00      0.51       362
+
+    accuracy                           0.35      1045
+   macro avg       0.12      0.33      0.17      1045
+weighted avg       0.12      0.35      0.18      1045
+
+Average accuracy: 0.3464114832535885
+Variance of the accuracy: 0.0
+Average macro-average F1: 0.17152333570244016
+Variance of the macro-average F1: 0.0
+Average weighted-average F1: 0.17825295939985647
+Variance of the weighted-average F1: 0.0
+ 
+---------------------------------------------------------------------------------------------------------------
+ 
+Top-MLP where the criterion, max_depth, and min_samples_split were changed
+Best hyperparameters found by gridsearch: {'criterion': 'entropy', 'max_depth': 4, 'min_samples_split': 2}
+ 
+Confusion matrix: 
+ 
+[[ 66  63 245]
+ [ 14 252  43]
+ [ 45  77 240]]
+ 
+Classification report:
+ 
+              precision    recall  f1-score   support
+
+           F       0.53      0.18      0.26       374
+           I       0.64      0.82      0.72       309
+           M       0.45      0.66      0.54       362
+
+    accuracy                           0.53      1045
+   macro avg       0.54      0.55      0.51      1045
+weighted avg       0.54      0.53      0.49      1045
+
+ 
+Average accuracy: 0.5381818181818182
+Variance of the accuracy: 5.2965820379570204e-05
+Average macro-average F1: 0.526650611894765
+Variance of the macro-average F1: 0.00035981003653790905
+Average weighted-average F1: 0.5149925887686726
 Variance of the weighted-average F1: 0.0
  
