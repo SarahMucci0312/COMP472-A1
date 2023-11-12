@@ -1,56 +1,492 @@
-Base-DT with default parameters
+---------------------------------------------------------------------------------------------------------------
+Base-DT with default parameters 
+Run 1
  
 Confusion matrix: 
-[[  0  97 234]
- [  0 297  40]
- [  0 126 251]]
+ 
+[[203  59  66]
+ [ 33 261  45]
+ [199  86  93]]
  
 Classification report:
  
               precision    recall  f1-score   support
 
-           F       0.00      0.00      0.00       331
-           I       0.57      0.88      0.69       337
-           M       0.48      0.67      0.56       377
+           F       0.47      0.62      0.53       328
+           I       0.64      0.77      0.70       339
+           M       0.46      0.25      0.32       378
 
-    accuracy                           0.52      1045
-   macro avg       0.35      0.52      0.42      1045
-weighted avg       0.36      0.52      0.42      1045
+    accuracy                           0.53      1045
+   macro avg       0.52      0.54      0.52      1045
+weighted avg       0.52      0.53      0.51      1045
 
-Average accuracy: 0.4977990430622009
-Variance of the accuracy: 2.28566195828849e-05
-Average macro-average F1: 0.4987385919859194
-Variance of the macro-average F1: 2.4026312434687317e-05
-Average weighted-average F1: 0.497421519855498
-Variance of the weighted-average F1: 2.2551936916072206e-05
+---------------------------------------------------------------------------------------------------------------
+Base-DT with default parameters 
+Run 2
+ 
+Confusion matrix: 
+ 
+[[130  45 153]
+ [ 53 189  97]
+ [154  67 157]]
+ 
+Classification report:
+ 
+              precision    recall  f1-score   support
+
+           F       0.39      0.40      0.39       328
+           I       0.63      0.56      0.59       339
+           M       0.39      0.42      0.40       378
+
+    accuracy                           0.46      1045
+   macro avg       0.47      0.46      0.46      1045
+weighted avg       0.46      0.46      0.46      1045
+
+---------------------------------------------------------------------------------------------------------------
+Base-DT with default parameters 
+Run 3
+ 
+Confusion matrix: 
+ 
+[[139  42 147]
+ [ 61 189  89]
+ [150  72 156]]
+ 
+Classification report:
+ 
+              precision    recall  f1-score   support
+
+           F       0.40      0.42      0.41       328
+           I       0.62      0.56      0.59       339
+           M       0.40      0.41      0.41       378
+
+    accuracy                           0.46      1045
+   macro avg       0.47      0.46      0.47      1045
+weighted avg       0.47      0.46      0.47      1045
+
+---------------------------------------------------------------------------------------------------------------
+Base-DT with default parameters 
+Run 4
+ 
+Confusion matrix: 
+ 
+[[140  44 144]
+ [ 53 190  96]
+ [156  68 154]]
+ 
+Classification report:
+ 
+              precision    recall  f1-score   support
+
+           F       0.40      0.43      0.41       328
+           I       0.63      0.56      0.59       339
+           M       0.39      0.41      0.40       378
+
+    accuracy                           0.46      1045
+   macro avg       0.47      0.46      0.47      1045
+weighted avg       0.47      0.46      0.47      1045
+
+---------------------------------------------------------------------------------------------------------------
+Base-DT with default parameters 
+Run 5
+ 
+Confusion matrix: 
+ 
+[[136  47 145]
+ [ 56 191  92]
+ [145  75 158]]
+ 
+Classification report:
+ 
+              precision    recall  f1-score   support
+
+           F       0.40      0.41      0.41       328
+           I       0.61      0.56      0.59       339
+           M       0.40      0.42      0.41       378
+
+    accuracy                           0.46      1045
+   macro avg       0.47      0.47      0.47      1045
+weighted avg       0.47      0.46      0.47      1045
+
+Performance Statistics: 
+Average accuracy: 0.4757894736842105
+Variance of the accuracy: 0.0008283326846912836
+Average macro-average F1: 0.4764710990751012
+Variance of the macro-average F1: 0.0004286171463786834
+Average weighted-average F1: 0.47359075590900834
+Variance of the weighted-average F1: 0.0003379829722533448
  
 ---------------------------------------------------------------------------------------------------------------
- 
 Top-DT where the criterion, max_depth, and min_samples_split were changed
-Best hyperparameters found by gridsearch: {'criterion': 'gini', 'max_depth': 4, 'min_samples_split': 2}
+Run 1
+Best hyperparameters found by gridsearch: {'criterion': 'entropy', 'max_depth': 4, 'min_samples_split': 2}
  
 Confusion matrix: 
-[[ 80  52 199]
- [ 39 255  43]
- [ 55  89 233]]
+ 
+[[ 86  81 161]
+ [  7 297  35]
+ [ 87 109 182]]
  
 Classification report:
  
               precision    recall  f1-score   support
 
-           F       0.46      0.24      0.32       331
-           I       0.64      0.76      0.70       337
-           M       0.49      0.62      0.55       377
+           F       0.48      0.26      0.34       328
+           I       0.61      0.88      0.72       339
+           M       0.48      0.48      0.48       378
 
     accuracy                           0.54      1045
-   macro avg       0.53      0.54      0.52      1045
-weighted avg       0.53      0.54      0.52      1045
+   macro avg       0.52      0.54      0.51      1045
+weighted avg       0.52      0.54      0.51      1045
 
  
-Average accuracy: 0.5435406698564593
+---------------------------------------------------------------------------------------------------------------
+Top-DT where the criterion, max_depth, and min_samples_split were changed
+Run 2
+Best hyperparameters found by gridsearch: {'criterion': 'entropy', 'max_depth': 7, 'min_samples_split': 3}
+ 
+Confusion matrix: 
+ 
+[[ 85  59 184]
+ [ 15 271  53]
+ [ 89 100 189]]
+ 
+Classification report:
+ 
+              precision    recall  f1-score   support
+
+           F       0.45      0.26      0.33       328
+           I       0.63      0.80      0.70       339
+           M       0.44      0.50      0.47       378
+
+    accuracy                           0.52      1045
+   macro avg       0.51      0.52      0.50      1045
+weighted avg       0.51      0.52      0.50      1045
+
+ 
+---------------------------------------------------------------------------------------------------------------
+Top-DT where the criterion, max_depth, and min_samples_split were changed
+Run 3
+Best hyperparameters found by gridsearch: {'criterion': 'entropy', 'max_depth': 7, 'min_samples_split': 2}
+ 
+Confusion matrix: 
+ 
+[[ 83  61 184]
+ [ 14 272  53]
+ [ 89 100 189]]
+ 
+Classification report:
+ 
+              precision    recall  f1-score   support
+
+           F       0.45      0.25      0.32       328
+           I       0.63      0.80      0.70       339
+           M       0.44      0.50      0.47       378
+
+    accuracy                           0.52      1045
+   macro avg       0.51      0.52      0.50      1045
+weighted avg       0.50      0.52      0.50      1045
+
+ 
+---------------------------------------------------------------------------------------------------------------
+Top-DT where the criterion, max_depth, and min_samples_split were changed
+Run 4
+Best hyperparameters found by gridsearch: {'criterion': 'entropy', 'max_depth': 7, 'min_samples_split': 5}
+ 
+Confusion matrix: 
+ 
+[[ 84  59 185]
+ [ 14 272  53]
+ [ 89 100 189]]
+ 
+Classification report:
+ 
+              precision    recall  f1-score   support
+
+           F       0.45      0.26      0.33       328
+           I       0.63      0.80      0.71       339
+           M       0.44      0.50      0.47       378
+
+    accuracy                           0.52      1045
+   macro avg       0.51      0.52      0.50      1045
+weighted avg       0.51      0.52      0.50      1045
+
+ 
+---------------------------------------------------------------------------------------------------------------
+Top-DT where the criterion, max_depth, and min_samples_split were changed
+Run 5
+Best hyperparameters found by gridsearch: {'criterion': 'entropy', 'max_depth': 7, 'min_samples_split': 3}
+ 
+Confusion matrix: 
+ 
+[[ 84  59 185]
+ [ 15 271  53]
+ [ 89 100 189]]
+ 
+Classification report:
+ 
+              precision    recall  f1-score   support
+
+           F       0.45      0.26      0.33       328
+           I       0.63      0.80      0.70       339
+           M       0.44      0.50      0.47       378
+
+    accuracy                           0.52      1045
+   macro avg       0.51      0.52      0.50      1045
+weighted avg       0.50      0.52      0.50      1045
+
+ 
+Performance Statistics: 
+Average accuracy: 0.524976076555024
+Variance of the accuracy: 6.175682791144949e-05
+Average macro-average F1: 0.5028648892042891
+Variance of the macro-average F1: 2.6469859528494115e-05
+Average weighted-average F1: 0.5035559355708058
+Variance of the weighted-average F1: 2.625136037282482e-05
+ 
+--------------------------------------------------------------------------------------------------------------- 
+Base-MLP with default parameters 
+Run 1
+ 
+Confusion matrix: 
+ 
+[[  0   0 328]
+ [  0   0 339]
+ [  0   0 378]]
+ 
+Classification report:
+ 
+              precision    recall  f1-score   support
+
+           F       0.00      0.00      0.00       328
+           I       0.00      0.00      0.00       339
+           M       0.36      1.00      0.53       378
+
+    accuracy                           0.36      1045
+   macro avg       0.12      0.33      0.18      1045
+weighted avg       0.13      0.36      0.19      1045
+
+--------------------------------------------------------------------------------------------------------------- 
+Base-MLP with default parameters 
+Run 2
+ 
+Confusion matrix: 
+ 
+[[  0   0 328]
+ [  0   0 339]
+ [  0   0 378]]
+ 
+Classification report:
+ 
+              precision    recall  f1-score   support
+
+           F       0.00      0.00      0.00       328
+           I       0.00      0.00      0.00       339
+           M       0.36      1.00      0.53       378
+
+    accuracy                           0.36      1045
+   macro avg       0.12      0.33      0.18      1045
+weighted avg       0.13      0.36      0.19      1045
+
+--------------------------------------------------------------------------------------------------------------- 
+Base-MLP with default parameters 
+Run 3
+ 
+Confusion matrix: 
+ 
+[[  0   0 328]
+ [  0   0 339]
+ [  0   0 378]]
+ 
+Classification report:
+ 
+              precision    recall  f1-score   support
+
+           F       0.00      0.00      0.00       328
+           I       0.00      0.00      0.00       339
+           M       0.36      1.00      0.53       378
+
+    accuracy                           0.36      1045
+   macro avg       0.12      0.33      0.18      1045
+weighted avg       0.13      0.36      0.19      1045
+
+--------------------------------------------------------------------------------------------------------------- 
+Base-MLP with default parameters 
+Run 4
+ 
+Confusion matrix: 
+ 
+[[  0   0 328]
+ [  0   0 339]
+ [  0   0 378]]
+ 
+Classification report:
+ 
+              precision    recall  f1-score   support
+
+           F       0.00      0.00      0.00       328
+           I       0.00      0.00      0.00       339
+           M       0.36      1.00      0.53       378
+
+    accuracy                           0.36      1045
+   macro avg       0.12      0.33      0.18      1045
+weighted avg       0.13      0.36      0.19      1045
+
+--------------------------------------------------------------------------------------------------------------- 
+Base-MLP with default parameters 
+Run 5
+ 
+Confusion matrix: 
+ 
+[[  0   0 328]
+ [  0   0 339]
+ [  0   0 378]]
+ 
+Classification report:
+ 
+              precision    recall  f1-score   support
+
+           F       0.00      0.00      0.00       328
+           I       0.00      0.00      0.00       339
+           M       0.36      1.00      0.53       378
+
+    accuracy                           0.36      1045
+   macro avg       0.12      0.33      0.18      1045
+weighted avg       0.13      0.36      0.19      1045
+
+Performance Statistics: 
+Average accuracy: 0.3617224880382775
 Variance of the accuracy: 0.0
-Average macro-average F1: 0.5198502816290507
+Average macro-average F1: 0.1770906535488405
 Variance of the macro-average F1: 0.0
-Average weighted-average F1: 0.5220531855504889
+Average weighted-average F1: 0.19217301543003362
 Variance of the weighted-average F1: 0.0
+ 
+---------------------------------------------------------------------------------------------------------------
+Top-MLP where the criterion, max_depth, and min_samples_split were changed
+Run 1
+Best hyperparameters found by gridsearch: {'criterion': 'entropy', 'max_depth': 7, 'min_samples_split': 2}
+ 
+Confusion matrix: 
+ 
+[[109  56 163]
+ [ 15 280  44]
+ [ 89  85 204]]
+ 
+Classification report:
+ 
+              precision    recall  f1-score   support
+
+           F       0.51      0.33      0.40       328
+           I       0.67      0.83      0.74       339
+           M       0.50      0.54      0.52       378
+
+    accuracy                           0.57      1045
+   macro avg       0.56      0.57      0.55      1045
+weighted avg       0.56      0.57      0.55      1045
+
+ 
+---------------------------------------------------------------------------------------------------------------
+Top-MLP where the criterion, max_depth, and min_samples_split were changed
+Run 2
+Best hyperparameters found by gridsearch: {'activation': 'relu', 'hidden_layer_sizes': (128, 64), 'solver': 'adam'}
+ 
+Confusion matrix: 
+ 
+[[106  64 158]
+ [  6 289  44]
+ [ 94  92 192]]
+ 
+Classification report:
+ 
+              precision    recall  f1-score   support
+
+           F       0.51      0.32      0.40       328
+           I       0.65      0.85      0.74       339
+           M       0.49      0.51      0.50       378
+
+    accuracy                           0.56      1045
+   macro avg       0.55      0.56      0.54      1045
+weighted avg       0.55      0.56      0.54      1045
+
+ 
+---------------------------------------------------------------------------------------------------------------
+Top-MLP where the criterion, max_depth, and min_samples_split were changed
+Run 3
+Best hyperparameters found by gridsearch: {'activation': 'relu', 'hidden_layer_sizes': (128, 64), 'solver': 'adam'}
+ 
+Confusion matrix: 
+ 
+[[111  51 166]
+ [ 14 280  45]
+ [108  78 192]]
+ 
+Classification report:
+ 
+              precision    recall  f1-score   support
+
+           F       0.48      0.34      0.40       328
+           I       0.68      0.83      0.75       339
+           M       0.48      0.51      0.49       378
+
+    accuracy                           0.56      1045
+   macro avg       0.55      0.56      0.55      1045
+weighted avg       0.54      0.56      0.54      1045
+
+ 
+---------------------------------------------------------------------------------------------------------------
+Top-MLP where the criterion, max_depth, and min_samples_split were changed
+Run 4
+Best hyperparameters found by gridsearch: {'activation': 'relu', 'hidden_layer_sizes': (128, 64), 'solver': 'adam'}
+ 
+Confusion matrix: 
+ 
+[[ 92  37 199]
+ [ 17 251  71]
+ [ 81  59 238]]
+ 
+Classification report:
+ 
+              precision    recall  f1-score   support
+
+           F       0.48      0.28      0.36       328
+           I       0.72      0.74      0.73       339
+           M       0.47      0.63      0.54       378
+
+    accuracy                           0.56      1045
+   macro avg       0.56      0.55      0.54      1045
+weighted avg       0.56      0.56      0.54      1045
+
+ 
+---------------------------------------------------------------------------------------------------------------
+Top-MLP where the criterion, max_depth, and min_samples_split were changed
+Run 5
+Best hyperparameters found by gridsearch: {'activation': 'relu', 'hidden_layer_sizes': (128, 64), 'solver': 'adam'}
+ 
+Confusion matrix: 
+ 
+[[152  53 123]
+ [ 20 278  41]
+ [150  80 148]]
+ 
+Classification report:
+ 
+              precision    recall  f1-score   support
+
+           F       0.47      0.46      0.47       328
+           I       0.68      0.82      0.74       339
+           M       0.47      0.39      0.43       378
+
+    accuracy                           0.55      1045
+   macro avg       0.54      0.56      0.55      1045
+weighted avg       0.54      0.55      0.54      1045
+
+ 
+Performance Statistics: 
+Average accuracy: 0.5592344497607655
+Variance of the accuracy: 2.4761337881458705e-05
+Average macro-average F1: 0.545791877969968
+Variance of the macro-average F1: 1.3089650879151277e-05
+Average weighted-average F1: 0.5453726209428178
+Variance of the weighted-average F1: 2.625136037282482e-05
  
